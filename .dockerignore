@@ -1,0 +1,11 @@
+
+.venv/
+.idea/
+.git/
+__pycache__/
+*.py[cod]
+.env
+db.sqlite3
+media/
+chroma_db/
+.pytest_cache/

@@ -1,0 +1,17 @@
+
+services:
+  web:
+    build: .
+    container_name: document_qa_web
+    env_file:
+      - .env
+    environment:
+      DJANGO_DEBUG: "True"
+      ALLOWED_HOSTS: "localhost,127.0.0.1"
+      DATABASE_NAME: "/app/db.sqlite3"
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./db.sqlite3:/app/db.sqlite3
+      - ./media:/app/media
+      - ./chroma_db:/app/chroma_db

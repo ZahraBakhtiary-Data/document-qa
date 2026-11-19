@@ -1,0 +1,24 @@
+
+# Environment variables and secrets
+.env
+
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+
+# IDE
+.idea/
+
+# Database and uploaded files
+db.sqlite3
+media/
+chroma_db/
+
+# Testing and logs
+.pytest_cache/
+*.log
+
+# Operating system
+.DS_Store
+Thumbs.db
